@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LoginLite</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="or">Or</string>
+    <string name="login">Login</string>
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:background="@drawable/background_main"
+    android:scrollbars="vertical">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:scrollbars="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="60sp"
+                android:text="ICOER"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_box"
+                android:drawableStart="@drawable/ic_name"
+                android:gravity="center"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="20dp"
+                android:textColorHint="#263238"
+                android:importantForAutofill="no"
+                tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+
+            <EditText
+                android:id="@+id/textNumber"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_box"
+                android:drawableStart="@drawable/ic_phone"
+                android:gravity="center"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:padding="20dp"
+                android:textColorHint="#263238"
+                android:autofillHints=""
+                tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+            <EditText
+                android:id="@+id/textEmail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/edit_text_box"
+                android:layout_marginBottom="10dp"
+                android:inputType="textEmailAddress"
+                android:hint="@string/email"
+                android:gravity="center"
+                android:padding="20dp"
+                android:drawableStart="@drawable/ic_mail"
+                android:importantForAutofill="no"
+                tools:ignore="VisualLintTextFieldSize" />
+            <EditText
+                android:id="@+id/textPass"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/edit_text_box"
+                android:layout_marginBottom="10dp"
+                android:inputType="numberPassword"
+                android:hint="@string/password"
+                android:gravity="center"
+                android:padding="20dp"
+                android:drawableStart="@drawable/ic_lock"
+                android:importantForAutofill="no"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <Button
+                android:id="@+id/btnSignUpAcc"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/btn_view"
+                android:fontFamily="sans-serif-black"
+                android:padding="10dp"
+                android:text="@string/sign_up"
+                android:textColor="#E1BEE7"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:background="@android:color/black"/>
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:textSize="20sp"
+                    tools:ignore="TextSizeCheck" />
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="2dp"
+                    android:background="@android:color/black"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/loginAcc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:minHeight="48dp"
+                android:text="@string/login"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="TextSizeCheck"
+                android:focusable="true" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
